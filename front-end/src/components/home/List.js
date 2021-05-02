@@ -23,10 +23,10 @@ export default function List() {
     
 
     return (
-        <div>
+        <>
             {projects.map(projects => (
                 <ProjectsList key={projects.id} id={projects.id} name={projects.name} description={projects.description}/>
             ))}
-        </div>
+        </>
     )
 }

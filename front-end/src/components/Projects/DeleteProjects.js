@@ -19,7 +19,7 @@ const DeleteProject = ({ id }) => {
         })
         .catch(err => {
             console.log(err);
-            console.log("kalibala");
+            
         })
 
     return (
