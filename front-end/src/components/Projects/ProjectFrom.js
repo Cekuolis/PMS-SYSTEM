@@ -10,12 +10,7 @@ function PrjectFrom() {
 
   return <>
       
-    <input
-    className="btn btn-outline-danger my-2 my-sm-0 m-2"
-      type="button"
-      value="Create"
-      onClick={togglePopup}
-    />
+      <button className="btn btn-outline-success my-2 my-sm-0 text-center" type="submit">Create   <i class="material-icons">create_new_folder</i></button>
     {isOpen && <Popup
       content={<>
         <b>Design your Popup</b>
