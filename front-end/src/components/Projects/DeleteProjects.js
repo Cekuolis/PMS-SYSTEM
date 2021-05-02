@@ -1,0 +1,31 @@
+
+import React from 'react';
+import axios from 'axios';
+
+
+const DeleteProject = ({ id }) => {
+
+    const user = JSON.parse(localStorage.getItem("token"));
+
+    axios.delete(`http://localhost:8081/api/projects/${id}`, {
+        headers: {
+            "Authorization": "Bearer " + user.token
+        },
+    })
+        .then(response => {
+            console.log(response.data)
+            window.location.reload(true);
+            
+        })
+        .catch(err => {
+            console.log(err);
+            console.log("kalibala");
+        })
+
+    return (
+        <>
+        </>
+    )
+}
+
+export default DeleteProject;
